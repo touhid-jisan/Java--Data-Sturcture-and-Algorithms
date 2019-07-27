@@ -1,4 +1,4 @@
-package datastructure.singlylinkedlist.practice1;
+package datastructure.singlylinkedlist.insertion1;
 
 public class LinkedList {
 	Node head;

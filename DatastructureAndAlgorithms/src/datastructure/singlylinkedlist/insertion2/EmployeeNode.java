@@ -1,4 +1,4 @@
-package datastructure.singlylinkedlist.practice2;
+package datastructure.singlylinkedlist.insertion2;
 
 public class EmployeeNode {
 	
