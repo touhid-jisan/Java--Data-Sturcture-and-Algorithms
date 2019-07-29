@@ -1,4 +1,4 @@
-package datastructure.doublylinkedlist.insertion1;
+package datastructure.doublylinkedlist.printreverse;
 
 public class Main {
 
@@ -7,22 +7,19 @@ public class Main {
 
 		
 		list.push(4);
-		list.printList();
+		// list.printList(); // 
+
 		
 		list.append(2);
 		list.append(3);
 		list.append(4);
 		list.append(5);
 		list.append(6);
-		list.printList();
+		//list.printList(); // 
+		list.printList(); // 
 		
-		list.push(8);
-		list.printList();
+		list.printReverse();
 		
-		list.insertAfter(list.head.next.next ,9 );
-		list.printList();
-		
-		list.insertBefore(list.head, 10);
 		list.printList();
 		
 		
