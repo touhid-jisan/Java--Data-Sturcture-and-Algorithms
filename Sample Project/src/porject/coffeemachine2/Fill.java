@@ -16,11 +16,11 @@ public class Fill extends Action{
 		
 		System.out.println("Write how many grams of coffee beans do you want to add: ");
 		int addCoffeeBeans = sc.nextInt();
-		setCoffeeBeans(beansHas + addCoffeeBeans);
+		setCoffeeBeans(super.beansHas + addCoffeeBeans);
 		
 		System.out.println("Write how many disposable cups of coffee do you want to add: ");
 		int addCup = sc.nextInt();
-		setCup( cupHas + addCup);
+		setCup( super.cupHas + addCup);
 		
 		
 	}

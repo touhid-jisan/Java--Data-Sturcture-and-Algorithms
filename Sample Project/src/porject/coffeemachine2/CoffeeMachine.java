@@ -21,7 +21,7 @@ public class CoffeeMachine {
 			int coffeeType = sc.nextInt();
 			switch(coffeeType) {
 			case 1:
-				((Buy)buy).ellementNeeds(250 , 0, 14 , 4);
+				((Buy)buy).ellementNeeds(250 , 0, 16 , 4);
 				break;
 			case 2: 
 				((Buy)buy).ellementNeeds(350 , 75, 20 , 7);
