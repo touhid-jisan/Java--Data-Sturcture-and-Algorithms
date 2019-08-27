@@ -1,4 +1,4 @@
-package porject.coffeemachine1;
+package project.coffeemachine1;
 
 import java.util.*;
 
