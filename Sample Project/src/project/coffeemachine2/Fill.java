@@ -1,4 +1,4 @@
-package porject.coffeemachine2;
+package project.coffeemachine2;
 
 import java.util.*;
 public class Fill extends Action{

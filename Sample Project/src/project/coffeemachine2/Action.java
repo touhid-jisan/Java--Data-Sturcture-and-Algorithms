@@ -1,11 +1,11 @@
-package porject.coffeemachine2;
+package project.coffeemachine2;
 
 public class Action {
-	public int waterHas = 1200;
-	public int milkHas = 540;
-	public int beansHas = 120;
-	public int cupHas = 9;
-	public int moneyHas = 	550;
+	public static int waterHas = 400;
+	public static int milkHas = 540;
+	public static int beansHas = 120;
+	public static int cupHas = 9;
+	public static int moneyHas = 	550;
 	
 	public Action() {
 		this.waterHas = waterHas;
