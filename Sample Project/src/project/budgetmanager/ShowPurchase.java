@@ -15,18 +15,5 @@ public class ShowPurchase extends Action{
 			int showItem = sc.nextInt();
 			showItem(showItem);
 		}
-		
-			
-		/*
-		if(super.list.isEmpty()) {
-			System.out.println("Purchase list is empty\n");;
-		}else {
-			for(String s: super.list) {
-				System.out.println(s);
-			}
-			System.out.println("Total sum: $" + super.totalSpend + "\nBalance: $" + totalIncome+ "\n");
-		}
-		
-		*/
 	}
 }
