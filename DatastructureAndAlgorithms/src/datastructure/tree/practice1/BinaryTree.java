@@ -5,7 +5,6 @@ public class BinaryTree {
 	
 	public void addNode(int key, String name) {
 		Node new_Node = new Node(key, name);
-		
 		if(root == null) {
 			root = new_Node;
 		}
