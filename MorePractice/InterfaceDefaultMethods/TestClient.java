@@ -8,7 +8,8 @@ public class TestClient {
         // a.foo(); 
         // a.bar(); 
         InterfaceC c = new X();
-        c.go( );
-
+        c.go();
+        // remember static method cannot be inherited
+        InterfaceC.staticMethod();
     }
  }
