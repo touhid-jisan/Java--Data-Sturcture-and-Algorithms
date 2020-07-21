@@ -1,9 +1,13 @@
 package CollectionFramework;
 
 import java.util.*;
+import java.util.Iterator;
 
-public class ArrayListDemo {
-    private static void arrayListDemo() {
+public class ArrayListDemo implements Iterable<Integer>{
+    public Iterator<Integer> iterator() {
+        return new ArrayList().iterator();
+    }
+    private static List arrayListDemo() {
 
         //              Collection Interface
         Collection<Integer> list2 = new ArrayList<>();
@@ -97,17 +101,41 @@ public class ArrayListDemo {
         // remember if we use set() then its ok for list4
         // but if we use add() we are changing structural caanges in list 1, which will effect list4 we want to access it
         // and it is okay with lsit1 if we change something in list4
-
+        /*
         for(int element : list1) {
             System.out.println("element : " + element);
             // Generic ConcurrentModificationException
-            if(element == 0) {
-                list1.remove(Integer.valueOf(element));
+            if(element == 2) {
+                list1.remove(element);
             }
         }
-        System.out.println(list1);
+        */
+        System.out.println("==========");
+        System.out.println("list1 = " + list1);
+        System.out.println("==========");
+        return list1;
+
     }
+
+    private static void iteratorDemo(List<Integer> list1) {
+        System.out.println("Inside Iterator Demo");
+        Iterator<Integer> iterator = list1.iterator();
+        while(iterator.hasNext()) {
+            int element  = iterator.next();
+            System.out.println(element);
+            if(element == 0) {
+                iterator.remove();
+            }
+        }
+        System.out.println("==========");
+        System.out.println(list1);
+       
+    }   
+
+
     public static void main(String[] args) {
-        arrayListDemo();
+
+        List<Integer> list1 = arrayListDemo();
+        iteratorDemo(list1);
     }
 }
